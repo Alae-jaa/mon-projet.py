@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mon TP Django</title>
+</head>
+<body>
+    <h1>Compteur de mots - Alae</h1>
+    <form action="counter" method="POST">
+        {% csrf_token %}
+        <textarea name="text" rows="10" cols="50" placeholder="Entrez votre texte..."></textarea><br><br>
+        <button type="submit">Compter les mots</button>
+    </form>
+</body>
+</html>
